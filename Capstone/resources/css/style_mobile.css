@@ -1,0 +1,568 @@
+/* Palletton.com Hue: 19° Monochromatic
+main - aa603a
+ffddcc
+e2a180
+763412
+391300
+
+Hue: 229°
+main - 2b4c6f
+9fb1c3
+587593
+112e4d
+ */
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cardo'), local('Cardo-Regular'), url(https://fonts.gstatic.com/s/cardo/v8/XRgRvJ9BvurZhQZpuWMwgw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cardo Bold'), local('Cardo-Bold'), url(https://fonts.gstatic.com/s/cardo/v8/X-1BEHTKpRYzad3JEXy9-vesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v10/4vqKRIwnQQGUQQh-PnvdMA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lora Bold'), local('Lora-Bold'), url(https://fonts.gstatic.com/s/lora/v10/P18Nsu9EiYldSvHIj_0e5w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+html {
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+  background-color: #ffffff;
+  color: #391300;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: Cardo, serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+}
+
+h4 {
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.mobile {
+  display: none;
+}
+
+p.author {
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #391300;
+  border-bottom: 1px solid #ffddcc;
+  transition: border-color 250ms linear 50ms;
+}
+
+a:hover {
+  border-bottom: 1px solid #391300;
+}
+
+/* Navigation section */
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 10;
+  width: 952px;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: #ffddcc;
+  align-items: center;
+  border-bottom: 1px solid #763412;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  heigth: 2rem;
+}
+
+.logo span {
+  font-family: Lora, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #763412;
+}
+
+.logo em {
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+   padding-left: 1rem;
+ }
+
+
+/* Main part */
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 4rem;
+}
+
+.z {
+  width: 1000px;
+  display: flex;
+  background-color: #e2a180;
+}
+
+.a {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.b {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.c {
+  display: flex;
+  }
+
+.c img {
+  padding: 1rem;
+}
+
+.d {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.e {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.t {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1.5rem;
+}
+/* Banner section */
+
+#banner .b {
+  justify-content: center;
+}
+
+#banner p {
+  font-size: 1.25rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#banner a {
+  width: 300px;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  border: 0;
+  border-radius: 5px;
+  background-color: #391300;
+  color: #ffddcc;
+  text-decoration: none;
+  transition: color 300ms ease-in 50ms, background-color 300ms ease-in 50ms;
+}
+
+#banner a:hover {
+  background-color: #ffddcc;
+  color: #763412;
+}
+
+/* Information section */
+
+#info.z {
+  background-color: #ffddcc;
+}
+
+#info .a img {
+  margin-bottom: 2rem;
+}
+
+#info .b {
+  margin-top: 1rem;
+}
+
+.c.f {
+  background-color: #e2a180;
+}
+
+#info a {
+  color: #2b4c6f;
+  border: 0;
+  text-decoration: underline;
+  transition: all 250ms linear 50ms;
+}
+
+#info a:hover {
+  color: #587593;
+  text-decoration: none;
+}
+
+#info a:visited {
+  color: #9fb1c3;
+}
+
+/* Course section */
+
+#course.z {
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2a180;
+}
+
+#course .c {
+  width: 264px;
+  flex-direction: column;
+  padding: 0;
+  background-color: #ffddcc;
+  margin: 0rem 1rem 2rem 1rem;
+}
+
+#course img {
+  padding: 0;
+}
+
+#course .t {
+  height: 100%;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+/* Thesis section */
+
+#thesis.z {
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffddcc;
+}
+
+#thesis .e {
+  flex-wrap: nowrap;
+}
+
+#thesis .a {
+  padding-top: 0;
+}
+
+video {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 952px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #391300;
+  border-top: 1px solid #763412;
+  color: #ffddcc;
+}
+
+.copy p {
+  margin: 0;
+}
+
+.footer a {
+  color: #ffddcc;
+  border-bottom: 1px solid #391300;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid #ffddcc;
+}
+
+/* Readmore.html */
+#readmore .header {
+  width: 85%;
+  justify-content: center;
+}
+
+#readmore .z {
+  width:85%;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+
+#readmore a {
+  margin: 5rem;
+  border-color: #e2a180;
+}
+
+#readmore a:hover {
+  border-color: #391300;
+}
+
+@media only screen and (max-width:1000px) {
+  /* Tabletta Android 5.1, Chrome 51, 800*1280 */
+  /* iPhone 6, Safari, 750*1334 */
+
+  .z {
+    width: 100%;
+  }
+
+  /* Header section */
+    .header {
+      width: 100%;
+    }
+
+    .logo {
+      padding-left: 0.5rem;
+    }
+
+    .header nav {
+      width: 100%;
+    }
+
+    nav {
+      padding-right: 0.5rem;
+    }
+
+    /* Banner section */
+
+
+}
+
+@media only screen and (max-width:720px) {
+  /* Botond Samsung SM-J500FN 720*1280 */
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 4.375rem;
+  }
+
+  h3 {
+    font-size: 3.125rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  p,
+  a,
+  #banner p {
+    font-size: 2.5rem;
+  }
+
+  .logo {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  /* Banner section */
+
+  .z {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100%;
+    padding: 0;
+  }
+
+  .a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .b {
+    width: 100%;
+  }
+
+  #banner .t {
+    width: 95%;
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  #banner a {
+    width: 450px;
+    padding: 1rem 0rem;
+    border-radius: 10px;
+  }
+
+
+  /* Information section */
+
+  #info .a {
+    display: none;
+  }
+
+  #info .b {
+    margin: 0;
+  }
+
+  #info .c {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+
+  img.mobile {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  #info .t {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+    padding-left: 2rem;
+  }
+
+  /* Course section */
+
+  #course.z {
+    padding-bottom: 2rem;
+  }
+
+  #course .c {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+   #course .t {
+     width: 100%;
+     text-align: left;
+     padding: 0;
+   }
+
+  #course img,
+  #course h4,
+  #course p {
+    display: none;
+  }
+
+   #course h3 {
+     padding: 1rem;
+     padding-bottom: 1.5rem;
+   }
+
+   /* Thesis section */
+
+   #thesis .t,
+   #thesis .b {
+     display: none;
+   }
+
+   video {
+     width: 100%;
+     margin-bottom: 1.5rem;
+   }
+
+
+
+}
